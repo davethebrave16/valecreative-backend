@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "main_contents",
+  "info": {
+    "singularName": "main-content",
+    "pluralName": "main-contents",
+    "displayName": "Contenuti principali",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headerTitle": {
+      "type": "string",
+      "required": true,
+      "default": "header title"
+    },
+    "headerSubtitle": {
+      "type": "string",
+      "required": true,
+      "default": "header sottotitolo"
+    },
+    "galleryTitle": {
+      "type": "string",
+      "required": true,
+      "default": "galleria"
+    },
+    "contacTitle": {
+      "type": "string",
+      "required": true,
+      "default": "contattami"
+    },
+    "contactSubtitle": {
+      "type": "string",
+      "required": true,
+      "default": "contattami sottotitolo"
+    },
+    "headerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "contactImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

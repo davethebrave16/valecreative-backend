@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_values",
+  "info": {
+    "singularName": "home-value",
+    "pluralName": "home-values",
+    "displayName": "Homepage: valori",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value1Title": {
+      "type": "string",
+      "required": true,
+      "default": "value1Title"
+    },
+    "value2Title": {
+      "type": "string",
+      "default": "value2Title",
+      "required": true
+    },
+    "value2Description": {
+      "type": "text",
+      "required": true,
+      "default": "value2Description"
+    },
+    "value1Description": {
+      "type": "text",
+      "required": true,
+      "default": "value1Description"
+    },
+    "value3Title": {
+      "type": "string",
+      "required": true,
+      "default": "value3Title"
+    },
+    "value3Description": {
+      "type": "text",
+      "required": true,
+      "default": "value3Description"
+    }
+  }
+}

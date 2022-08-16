@@ -10,15 +10,19 @@ npm install
 
 ### `develop`
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+Start your Strapi application with autoReload enabled.
 
 ```
 npm run develop
 ```
+or
+```
+npm run develop-admin
+```
 
 ### `start`
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+Start your Strapi application with autoReload disabled.
 
 ```
 npm run start
@@ -26,7 +30,7 @@ npm run start
 
 ### `build`
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+Build your admin panel.
 
 ```
 npm run build

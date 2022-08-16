@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_hiws",
+  "info": {
+    "singularName": "home-hiw",
+    "pluralName": "home-hiws",
+    "displayName": "Homepage: come funziona",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hiw1Description": {
+      "type": "text",
+      "default": "hiw1Description",
+      "required": true
+    },
+    "hiw2Description": {
+      "type": "text",
+      "required": true,
+      "default": "hiw2Description"
+    },
+    "hiw3Description": {
+      "type": "text",
+      "required": true,
+      "default": "hiw3Description"
+    }
+  }
+}
