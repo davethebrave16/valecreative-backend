@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artwork_types",
+  "info": {
+    "singularName": "artwork-type",
+    "pluralName": "artwork-types",
+    "displayName": "Tipologie di opere"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "artworks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artwork.artwork",
+      "mappedBy": "type"
+    }
+  }
+}

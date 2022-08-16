@@ -38,6 +38,12 @@
         "videos",
         "audios"
       ]
+    },
+    "type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::artwork-type.artwork-type",
+      "inversedBy": "artworks"
     }
   }
 }
