@@ -52,6 +52,16 @@
       "type": "string",
       "required": true,
       "default": "contattami"
+    },
+    "contactButton": {
+      "type": "string",
+      "required": true,
+      "default": "Scrivimi"
+    },
+    "contactSuccessMessage": {
+      "type": "text",
+      "required": true,
+      "default": "Grazie per averci scritto. Ti ricontatteremo quanto prima."
     }
   }
 }
