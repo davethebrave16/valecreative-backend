@@ -1,8 +1,8 @@
 {
   "name": "valecreative-backend",
   "private": false,
-  "version": "1.0.0",
-  "description": "A Strapi application",
+  "version": "1.0.1",
+  "description": "A NextJS Backend Admin Panel",
   "scripts": {
     "develop": "strapi develop",
     "develop-admin": "strapi develop --watch-admin",

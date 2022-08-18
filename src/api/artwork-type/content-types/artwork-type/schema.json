@@ -4,7 +4,8 @@
   "info": {
     "singularName": "artwork-type",
     "pluralName": "artwork-types",
-    "displayName": "Tipologie di opere"
+    "displayName": "Tipologie di opere",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,14 @@
       "relation": "oneToMany",
       "target": "api::artwork.artwork",
       "mappedBy": "type"
+    },
+    "picture": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

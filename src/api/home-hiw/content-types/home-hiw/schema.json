@@ -26,6 +26,11 @@
       "type": "text",
       "required": true,
       "default": "hiw3Description"
+    },
+    "hiwTitle": {
+      "type": "string",
+      "required": true,
+      "default": "How it works"
     }
   }
 }
