@@ -62,6 +62,16 @@
       "type": "text",
       "required": true,
       "default": "Grazie per averci scritto. Ti ricontatteremo quanto prima."
+    },
+    "contactPageTitle": {
+      "type": "string",
+      "required": true,
+      "default": "contattami"
+    },
+    "contactPageSubtitle": {
+      "type": "string",
+      "required": true,
+      "default": "Scrivi qui per contattarmi"
     }
   }
 }
