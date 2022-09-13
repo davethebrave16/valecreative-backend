@@ -1,7 +1,14 @@
 module.exports = {
     async afterCreate(event) {    // Connected to "Save" button in admin panel
         const { result } = event;
-        console.log(event)
+
+        const administrators = await strapi.query("plugin::users-permissions.user").findMany({
+            where: {
+                confirmed: true,
+                blocked: true,
+            }
+        });
+        const emails = administrators.map((a) => a.email);
 
         let html = '<p>Oggetto: ' + result.subject + '</p>'
         html += '<p>Mittente: ' + result.senderName + '</p>'
@@ -9,16 +16,13 @@ module.exports = {
         html += '<p>Telefono: ' + result.phone + '</p>'
         html += '<p>Descrizione: ' + result.message + '</p>'
 
-        try{
+        try {
             await strapi.plugins['email'].services.email.send({
-              to: 'valecreative@grr.la',
-              from: 'noreply@valecreative.it', // e.g. single sender verification in SendGrid
-              replyTo: 'noreply@valecreative.it',
-              subject: '[ValeCreative] Hai ricevuto un nuovo messaggio',
-              html: html, 
-                
+                to: emails,
+                subject: '[ValeCreative] Hai ricevuto un nuovo messaggio',
+                html: html,
             })
-        } catch(err) {
+        } catch (err) {
             console.log(err);
         }
     }
